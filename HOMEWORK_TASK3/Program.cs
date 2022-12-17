@@ -11,20 +11,20 @@ string input3 = Console.ReadLine() ??"";
 int c = int.Parse(input3);
 
 // Наиболее коротким вариантом решения является применение метода Math.Max():
-//int first_comparison = Math.Max(a, b);
-//int result = Math.Max(first_comparison, c);
+int first_comparison = Math.Max(a, b);
+int result = Math.Max(first_comparison, c);
 
-//Console.WriteLine($"максимальным из трех чисел является число {result}");
+Console.WriteLine($"максимальным из трех чисел является число {result}");
 
 // либо ветвление через if:
-int max = a;
-if(a < b)
-{
-    max = b;
-}
-if( max < c)
-{
-    max = c;
-}
-Console.WriteLine($"максимальным из трех чисел является число {max}");
+//int max = a;
+//if(a < b)
+//{
+//    max = b;
+//}
+//if( max < c)
+//{
+//    max = c;
+//}
+//Console.WriteLine($"максимальным из трех чисел является число {max}");
 
