@@ -8,8 +8,11 @@ int n=GetNumberFromUser($"Введите число ", "Ошибка ввода!
 if(m == n) Console.Write($"M = {m}; N = {n} -> '0' ");
 else 
 {
-    string result = GetResult(m, n);
-    Console.Write($"M = {m}; N = {n} -> '{result}' ");
+    if (m>n) 
+    {
+        string result = GetResult(m, n);
+        Console.Write($"M = {m}; N = {n} -> '{result}' ");
+    }
 }
 
 int GetNumberFromUser(string message, string errorMessage)
